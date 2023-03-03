@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
   Widget _buildFromIntent(Intent? intent) {
     SendData data = intent == null || intent.extra == null
         ? SendData(
-            package: "Not intent started yet.", JSON: "Not intent started yet.")
+            package: "", JSON: "")
         : SendData.fromJson(intent.extra!);
 
     return Column(
